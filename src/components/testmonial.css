@@ -1,0 +1,231 @@
+.testmonial-section {
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+
+.testmonial-header {
+    margin-bottom: 10em;
+}
+
+.testmonial-header h1 {
+    font-size: 2.5em;
+}
+
+.text-container h1 {
+    font-weight: 100;
+    font-size: 1.2em;
+    transition: all .2s ease-in;
+}
+
+.starts-container {
+    position: relative;
+    right: 20px;
+    top: 10px;
+    color: #6E57E0;
+    transition: all .2s ease-in;
+}
+
+.text-container p {
+    font-weight: 100;
+    position: relative;
+    bottom: 14px;
+    color: #666;
+}
+
+.testmonial-body {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    width: 110%;
+    cursor: pointer;
+}
+
+.text-container {
+    position: absolute;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.testmonial-body img {
+    height: 5rem;
+    width: 5rem;
+    object-fit: center;
+    border-radius: 50%;
+    transition: all .2s ease-in;
+}
+
+.text-container {
+    position: relative;
+    right: 14%;
+    bottom: 15px;
+
+}
+
+.testomnial-describtion {
+    position: relative;
+    left: 4%;
+    padding: 0px;
+    margin: 0px;
+    width: 60%;
+    text-align: start;
+    margin-left: 2em;
+    cursor: pointer;
+    line-height: 24px;
+    font-weight: 100;
+    font-size: large;
+    color: #666;
+}
+
+@media (max-width:1440px) {
+    .testmonial-body {
+        width: 120%;
+        transition: all .2s ease-in;
+    }
+
+    .starts-container {
+        position: relative;
+        right: 50px;
+        font-size: small;
+    }
+
+    .testmonial-body img {
+        padding-right: 1em;
+        height: 4rem;
+        width: 4rem;
+        transition: all .2s ease-in;
+    }
+
+    .text-container h1 {
+        font-weight: 100;
+        font-size: 1em;
+    }
+
+    .testomnial-describtion {
+        width: 70%;
+        margin-left: 0em;
+        font-size: 0.9em;
+        transition: all .2s ease-in;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .testmonial-body {
+        width: 100%;
+        transition: all .2s ease-in;
+    }
+
+
+    .starts-container {
+        display: flex;
+        flex-direction: column;
+        transition: all .2s ease-in;
+        font-size: small;
+    }
+
+    .testmonial-body img {
+        padding-right: 1em;
+        height: 3rem;
+        width: 3rem;
+        transition: all .2s ease-in;
+    }
+
+    .text-container {
+        padding: 1em;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .text-container h1 {
+        font-weight: 100;
+        font-size: 0.9em;
+    }
+
+    .text-container p {
+        font-weight: 100;
+        font-size: 0.8em;
+    }
+
+    .testomnial-describtion {
+        width: 84%;
+        font-size: 0.8em;
+        transition: all .2s ease-in;
+    }
+
+}
+
+@media (max-width:768px) {
+    .testmonial-body {
+        width: 100%;
+        transition: all .2s ease-in;
+    }
+
+
+    .testmonial-body img {
+        height: 3.5rem;
+        width: 3.5rem;
+        transition: all .2s ease-in;
+    }
+
+    .text-container h1 {
+        font-weight: 100;
+        font-size: 1em;
+    }
+
+    .starts-container {
+        display: flex;
+        flex-direction: row;
+        transition: all .2s ease-in;
+        font-size: small;
+    }
+
+    .testomnial-describtion {
+        width: 70%;
+        margin-left: 0em;
+        font-size: 0.9em;
+        transition: all .2s ease-in;
+    }
+
+}
+
+@media (max-width:470px) {
+
+
+    .text-container h1 {
+        font-weight: 100;
+        font-size: 0.7em;
+    }
+
+    .text-container p {
+        font-weight: 100;
+        font-size: 0.6em;
+        margin-top: 20px;
+    }
+
+    .starts-container {
+        display: flex;
+        flex-direction: row;
+        transition: all .2s ease-in;
+        font-size: small;
+    }
+
+    .testomnial-describtion {
+        width: 70%;
+        margin-left: 0em;
+        font-size: 0.9em;
+        transition: all .2s ease-in;
+    }
+
+}
+
+@media(max-width:420px) {
+    .starts-container {
+        display: flex;
+        position: absolute;
+        top: 10%;
+        flex-direction: column;
+        transition: all .2s ease-in;
+        font-size: small;
+    }
+}

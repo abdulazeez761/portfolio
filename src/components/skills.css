@@ -1,0 +1,498 @@
+.skills-container {
+    position: relative;
+    top: 35em;
+    /* margin-bottom: 35em; */
+    transition: all 0.2s ease-in-out;
+}
+
+.skills-header h1 {
+    font-size: 3em;
+    transition: all .2s ease-in;
+}
+
+.skills-header,
+.skills-sections-conainer {
+    position: relative;
+    bottom: 20em;
+    transition: all 0.2s ease-in-out;
+}
+
+.skills-content-container {
+    position: relative;
+    top: 7em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px, 3fr));
+    grid-template-rows: auto;
+    justify-items: center;
+    /* align-items: center; */
+
+}
+
+.design {
+    margin-right: 4.9em;
+    transition: all .2s ease-in;
+}
+
+.skills-content-container .notOpend::after {
+    content: "";
+    position: absolute;
+    left: 30em;
+    top: 37px;
+    height: 0px;
+    transition: all 0.1s ease-in-out;
+    border: solid #6E57E0;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    outline: none;
+}
+
+.skills-content-container .opend::after {
+    content: "";
+    position: absolute;
+    left: 30em;
+    top: 37px;
+    height: 0px;
+    transition: all 0.1s ease-in-out;
+    border: solid #6E57E0;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-135deg);
+    border-radius: 2px;
+    outline: none;
+
+}
+
+.skills-content-container .skill:hover {
+    cursor: pointer;
+}
+
+.skills-content-container .skill {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: left;
+}
+
+.skills-content-container .skill .skikll-icon {
+    color: #6E57E0;
+    font-size: 3em;
+    margin-right: 19px;
+    margin-top: 19px;
+    transition: all .2s ease-in;
+}
+
+.skill-content p {
+    color: #999;
+    font-size: 1.2em;
+    font-weight: 100;
+    transition: all .2s ease-in;
+}
+
+.skill-content {
+    position: relative;
+    margin-bottom: 4em;
+}
+
+.skill-type {
+    position: relative;
+    background-color: white;
+    width: 177%;
+    transition: all 1s ease-in-out;
+}
+
+.skill-type p {
+    margin-bottom: 0.5em;
+    color: black;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #ccc8df;
+    border-radius: 25px;
+}
+
+.skill-bar {
+    text-align: right;
+    color: white;
+    border-radius: 25px;
+}
+
+.skill-type p span {
+    position: absolute;
+    left: 92%;
+    color: #999;
+}
+
+.html {
+    width: 90%;
+    border: #6E57E0 3px solid;
+}
+
+.css {
+    width: 85%;
+    border: #6E57E0 3px solid;
+}
+
+.react {
+    width: 75%;
+    border: #6E57E0 3px solid;
+}
+
+.angular {
+    width: 50%;
+    border: #6E57E0 3px solid;
+}
+
+.javascript {
+    width: 80%;
+    border: #6E57E0 3px solid;
+}
+
+/* design */
+
+.design-skill-type {
+    position: relative;
+    background-color: white;
+    width: 260%;
+    transition: all 1s ease-in-out;
+}
+
+.design-skill-type p {
+    margin-bottom: 0.5em;
+    color: black;
+}
+
+
+.skill-bar {
+    text-align: right;
+    color: white;
+    border-radius: 25px;
+}
+
+.design-skill-type p span {
+    position: absolute;
+    left: 92%;
+    color: #999;
+}
+
+.figma {
+    width: 90%;
+    border: #6E57E0 3px solid;
+}
+
+.scetch {
+    width: 80%;
+    border: #6E57E0 3px solid;
+}
+
+.photoshop {
+    width: 70%;
+    border: #6E57E0 3px solid;
+}
+
+.show-skills {
+    display: block;
+    transition: all 0.1s ease-in-out;
+}
+
+.hide-skills {
+    display: none;
+}
+
+/* back-end */
+.nodejs {
+    width: 85%;
+    border: #6E57E0 3px solid;
+}
+
+.php {
+    width: 80%;
+    border: #6E57E0 3px solid;
+}
+
+.python {
+    width: 75%;
+    border: #6E57E0 3px solid;
+}
+
+.sql {
+    width: 70%;
+    border: #6E57E0 3px solid;
+}
+
+.skill-content h1 {
+
+    transition: all .2s ease-in;
+}
+
+@media(max-width:1000px) {
+    .skills-content-container .skill .skikll-icon {
+        color: #6E57E0;
+        font-size: 2em;
+        margin-right: 19px;
+        margin-top: 19px;
+        transition: all .2s ease-in;
+    }
+
+    .skill-content p {
+        font-size: 1em;
+        font-weight: 100;
+        transition: all .2s ease-in;
+
+    }
+
+    .skill-content h1 {
+        font-size: 1.3em;
+        transition: all .2s ease-in;
+    }
+
+    .design {
+        margin-right: 4.4em;
+        transition: all .2s ease-in;
+    }
+
+    .skill-type {
+        position: relative;
+        background-color: white;
+        width: 210%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .design-skill-type {
+        position: relative;
+        background-color: white;
+        width: 320%;
+        transition: all 1s ease-in-out;
+    }
+}
+
+@media (max-width:780px) {
+    .skills-header {
+        font-size: 0.8em;
+        transition: all .2s ease-in;
+    }
+
+    .skills-content-container .notOpend::after {
+        left: 25em;
+    }
+
+    .skills-content-container .opend::after {
+        position: absolute;
+        left: 25em;
+    }
+
+    .skill-type {
+        position: relative;
+        background-color: white;
+        width: 177%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .design-skill-type {
+        position: relative;
+        background-color: white;
+        width: 260%;
+        transition: all 1s ease-in-out;
+    }
+}
+
+@media (max-width:700px) {
+    .skills-sections-conainer {
+        position: relative;
+        right: 15%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .skills-content-container .skill .skikll-icon {
+        color: #6E57E0;
+        font-size: 1.5em;
+        margin-right: 19px;
+        margin-top: 19px;
+        transition: all .2s ease-in;
+    }
+
+    .skill-content p {
+        font-size: .8em;
+        font-weight: 100;
+        transition: all .2s ease-in;
+
+    }
+
+    .skill-content h1 {
+        font-size: 1em;
+        transition: all .2s ease-in;
+    }
+
+    .design {
+        margin-right: 3.3em;
+        transition: all .2s ease-in;
+    }
+
+
+
+    .skills-content-container .notOpend::after {
+        left: 20em;
+    }
+
+    .skills-content-container .opend::after {
+        position: absolute;
+        left: 20em;
+    }
+
+    .skill-type {
+        position: relative;
+        background-color: white;
+        width: 177%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .skill-type {
+        position: relative;
+        background-color: white;
+        width: 180%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .design-skill-type {
+        position: relative;
+        background-color: white;
+        width: 260%;
+        transition: all 1s ease-in-out;
+    }
+}
+
+@media(max-width:490px) {
+    #skills-section {
+        position: relative;
+        right: 5%;
+    }
+
+    .skills-header {
+        position: relative;
+        left: 6%;
+    }
+}
+
+
+
+@media (max-width:520px) {
+    .skills-sections-conainer {
+        position: relative;
+        right: 27%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    @media (max-width:435px) {
+        .skills-sections-conainer {
+            position: relative;
+            right: 40%;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .skills-content-container .skill .skikll-icon {
+            color: #6E57E0;
+            font-size: 1em;
+            margin-right: 19px;
+            margin-top: 19px;
+            transition: all .2s ease-in;
+        }
+
+        .skill-content p {
+            font-size: .7em;
+            font-weight: 100;
+            transition: all .2s ease-in;
+
+        }
+
+        .skill-content h1 {
+            font-size: 0.8em;
+            transition: all .2s ease-in;
+        }
+
+        .design {
+            margin-right: 2em;
+            transition: all .2s ease-in;
+        }
+
+        .skills-content-container .notOpend::after {
+            left: 15em;
+            top: 10px;
+        }
+
+        .skills-content-container .opend::after {
+            position: absolute;
+            left: 15em;
+            top: 10px;
+        }
+
+        .skill-type {
+            position: relative;
+            width: 170%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .design-skill-type {
+            position: relative;
+            width: 230%;
+            transition: all 1s ease-in-out;
+        }
+    }
+}
+
+
+
+@media (max-width:435px) {
+    .skills-sections-conainer {
+        position: relative;
+        right: 40%;
+        transition: all 0.2s ease-in-out;
+    }
+
+
+    .skills-content-container .notOpend::after {
+        left: 12em;
+        top: 10px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .skills-content-container .opend::after {
+        position: absolute;
+        left: 12em;
+        top: 10px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .skill-type {
+        position: relative;
+        width: 135%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .design-skill-type {
+        position: relative;
+        width: 180%;
+        transition: all 1s ease-in-out;
+    }
+}
+
+@media(max-width:360px) {
+    .skills-sections-conainer {
+        position: relative;
+        right: 50%;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+@media(max-width:313px) {
+    .skills-sections-conainer {
+        position: relative;
+        right: 70%;
+        transition: all 0.2s ease-in-out;
+    }
+}

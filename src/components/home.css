@@ -1,0 +1,320 @@
+.home-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-sucial-media ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    padding: 0%;
+}
+
+.home-sucial-media ul li {
+    list-style: none;
+}
+
+.home-sucial-media ul li {
+    padding: 1em;
+    color: #6E57E0;
+}
+
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10em;
+}
+
+.home-text h1 {
+    font-size: 2.8em;
+    margin-bottom: 0%;
+}
+
+.home-text .info {
+    color: rgb(143, 143, 143);
+}
+
+.whow-am-i,
+.info {
+    position: relative;
+    padding-right: 0px;
+    color: #999;
+    font-weight: 540;
+    font-size: 1.3em;
+    text-align: left;
+    width: 50%;
+    line-height: 1.3em;
+}
+
+.my-major {
+    font-size: 1.5em;
+}
+
+.none-scroll {
+    opacity: 0;
+}
+
+.contact-me-button {
+    border: none;
+    margin-top: 1em;
+    padding: 1.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    border-radius: 10px;
+    background-color: #6E57E0;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.contact-me-button:hover {
+    background-color: rgb(68, 11, 121);
+}
+
+.home-image {
+    margin-right: 11em;
+}
+
+.home-image .my-image {
+    height: 35rem;
+    width: 35rem;
+    transition: all .2s ease-in;
+}
+
+
+.scroll-down {
+    position: absolute;
+    bottom: 70px;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.scroll-down a {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    transition: all .2s ease-in;
+}
+
+.scroll-down a div {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: xx-large;
+    transition: all .2s ease-in;
+}
+
+.scroll-down a span {
+    color: black;
+    transition: all .2s ease-in;
+}
+
+
+
+@keyframes bounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+
+    }
+
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width:1490px) {
+    .scroll-down {
+        left: 450px;
+        transition: all .2s ease-in;
+    }
+}
+
+
+
+@media (max-width:1320px) {
+    #home-section {
+        position: relative;
+        right: 0%;
+        bottom: 8em;
+        overflow-x: hidden;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+    .home-container {
+        flex-direction: column-reverse;
+        position: relative;
+        left: 10%;
+        overflow-x: hidden;
+    }
+
+    .home-sucial-media ul {
+        position: absolute;
+        right: 97%;
+        bottom: 140%;
+        flex-direction: column;
+    }
+
+    .home-image .my-image {
+        position: relative;
+        right: 0%;
+        height: 25rem;
+        width: 25rem;
+        transition: all .2s ease-in;
+    }
+
+    .home-image {
+        margin-right: 1em;
+        /*  */
+    }
+
+
+
+    .home-text h1 {
+        font-size: 1.8em;
+        margin-bottom: 0%;
+    }
+
+    .whow-am-i,
+    .info {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:850px) {
+    .home-image .my-image {
+        height: 20rem;
+        width: 20rem;
+        transition: all .2s ease-in;
+    }
+}
+
+@media (max-width:700px) {
+    .home-image .my-image {
+        height: 15rem;
+        width: 15rem;
+        transition: all .2s ease-in;
+    }
+
+    .home-sucial-media ul {
+        position: absolute;
+        right: 97%;
+        bottom: 110%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px) {
+
+
+    .home-container {
+        flex-direction: column-reverse;
+        position: relative;
+        left: 9%;
+        overflow-x: hidden;
+    }
+
+
+    .home-text {
+        position: relative;
+        right: 13%;
+        transition: all .2s ease-in;
+    }
+
+    .home-image .my-image {
+        position: relative;
+        right: 0%;
+        height: 12rem;
+        width: 12rem;
+        transition: all .2s ease-in;
+    }
+
+    .home-text h1 {
+        font-size: 1em;
+        margin-bottom: 0%;
+        transition: all .2s ease-in;
+
+    }
+
+    .whow-am-i,
+    .info {
+        font-size: 0.7em;
+        transition: all .2s ease-in;
+
+    }
+
+    .contact-me-button {
+        padding: 14px;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width:440px) {
+    .home-text h1 {
+        font-size: 1em;
+        margin-bottom: 0%;
+        transition: all .2s ease-in;
+        /* width: 100%; */
+    }
+
+    .whow-am-i,
+    .info {
+        font-size: 0.7em;
+        transition: all .2s ease-in;
+        width: 100%;
+    }
+
+    .home-image .my-image {
+        height: 9rem;
+        width: 9rem;
+        transition: all .2s ease-in;
+    }
+
+    .home-sucial-media ul li {
+        font-size: 11px;
+        transition: all .2s ease-in;
+    }
+
+
+}
+
+@media(max-width:380px) {
+    .home-sucial-media ul {
+        position: relative;
+        right: 7%;
+        top: 100%;
+        flex-direction: row;
+        transition: all .2s ease-in;
+    }
+}
+
+@media(max-width:320px) {
+    .home-text {
+        position: relative;
+        right: 27%;
+        transition: all .2s ease-in;
+
+    }
+}
